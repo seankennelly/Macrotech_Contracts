@@ -1,0 +1,1983 @@
+/* MACROTECH CONTRACTS Ver 2.2
+
+2.2 Version notes:
+15/11/23
+  - Redid Navbar & Footer with Bootstrap and applied to all pages. All pages are now Bootstrap-friendly for further changes
+  - Client References page updated. Redid page from scratch with Bootstrap. Added fourth reference.
+  - JS Slideshow on Homepage broke with implementation of Bootstrap. Replaced with Bootstrap Carousel with same content/style/functionality
+
+CONTENTS:
+1. Global Styles
+  1.1. Colours
+  1.2. Page Standards
+  1.3 Bootstrap Nav Bar
+  1.4. Bootstrap Footer
+2. Homepage
+3. Partitions
+4. Computer Floors
+5. Fire Protection
+6. Glass Block Walls
+7. Environment
+8. Contact
+9. Charity Support
+10.1 Client References
+10.2 Client References (Redesign w/ Bootstrap)
+11. Health & Safety
+12. About Us
+13. Ceilings
+
+
+ ==============
+ 1. Global Styles
+ ================ 
+
+     -----------
+     1.1 Colours
+    -----------
+
+  Nav / Footer / Trim = #00396C
+
+  Blue Containers = #E6EBF0
+
+  Grey Containers = #F0EAE6
+
+
+    -------------------
+    1.2. Page Standards 
+    ------------------*/
+
+html {
+  overflow: visible;
+}
+
+body {
+  height: 100%;
+  min-width: 320px;
+  max-width: 1850px;
+  margin: 0 auto 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: visible;
+  overflow-x: visible;
+  overflow: visible;
+}
+
+/* Go through and delete other examples of the image code below */
+main {
+  height: 100%;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+#page-heading {
+  position: relative;
+  max-width: 100%;
+  margin: 35px auto 25px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.section-break {
+  display: block;
+  position: relative;
+  width: 80%;
+  height: 5px;
+  margin: 60px auto;
+  background-color: #00396c;
+}
+
+/* --------------------
+  1.3 Bootstrap Nav Bar
+  ------------------- */
+.navbar {
+  background-color: #00396c;
+  color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: calc(0.9rem + 0.5vw);
+  font-weight: 200;
+}
+
+.navbar .navbar-brand img {
+  max-width: 221px;
+}
+
+#nav-logo {
+  /* Firefox */
+  image-rendering: -moz-crisp-edges;
+  /* Opera */
+  image-rendering: -o-crisp-edges;
+  /* Webkit (non-standard naming) */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+#toggler {
+  border: 2px solid #8DA6BD;
+}
+
+.navbar a,
+.navbar a:active,
+.navbar a:focus,
+.navbar a:hover {
+  color: inherit;
+}
+
+.navbar ul li .nav-link {
+  padding-left: calc(2rem + 1vw);
+}
+
+@media(max-width: 992px) {
+
+  /* Note that this is MAX width */
+  .navbar .dropdown-menu {
+    width: 70%;
+    margin-left: 3rem;
+  }
+}
+
+@media(min-width: 992px) {
+  .navbar .dropdown-menu {
+    background-color: #E6EBF0;
+  }
+
+  .navbar .dropdown-item:hover {
+    background-color: white;
+  }
+}
+
+/* -------------------
+  1.4 Bootstrap Footer 
+    ---------------- */
+footer {
+  /* Prevents gap under footer */
+  overflow: hidden;
+  width: 100%;
+  background-color: #E6EBF0;
+}
+
+#footer-logo {
+  width: 100%;
+  max-width: 221px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+/* ============
+  2. Homepage
+  ============*/
+.home a,
+.home a:hover,
+.home a:focus,
+.home a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home {
+  font-size: 16px;
+}
+
+.home #intro #headline {
+  width: 90%;
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+.home #intro #headline h1 {
+  font-size: 250%;
+  margin: 2rem 0;
+}
+
+.home #intro #headline h2 {
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.home .slideshow-container {
+  width: 100%;
+  max-width: 710px;
+  margin: 0 auto 3rem;
+}
+
+.home .slideshow-container img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.home #intro #sub-text {
+  width: 90%;
+  margin: -10px auto 0;
+  font-size: 115%;
+  text-align: center;
+}
+
+.home .section-break {
+  margin: 30px auto;
+}
+
+#services {
+  width: 100%;
+}
+
+#services #top-text {
+  width: 90%;
+  margin: 0 auto 0;
+  text-align: center;
+}
+
+#services #outer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto 0;
+  padding: 10px 5px;
+  background-color: #f5f6f8;
+  border-radius: 50px;
+  border: 2px dashed #254864;
+  text-align: center;
+}
+
+#services .inner-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Removed margin bottom for
+last inner-container */
+#services #outer-container> :nth-child(4) {
+  margin-bottom: 0;
+}
+
+#services .diagrams {
+  margin: 10px auto 0;
+  border-radius: 50%;
+  border: 2px solid #254864;
+}
+
+#services .subcontainer h3 {
+  margin: 5px auto 0;
+  font-style: italic;
+}
+
+/* Not hidden for touch devices */
+#services .info-container {
+  display: inline-block;
+  width: 90%;
+  max-width: 486px;
+  margin: 10px auto 0;
+  padding: 0 5px 0;
+  background-color: #d0dfeb;
+  border-radius: 10px 10px 50px 50px;
+  border: 2px dashed #254864;
+  font-size: 90%;
+}
+
+/* Bold weight for "read more" */
+#services .info-container .read-more {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#services #extra {
+  width: 80%;
+  max-width: 417px;
+  margin: 20px auto 0;
+  padding: 10px 10px 0;
+  background-color: #d0dfeb;
+  border: dotted 2px #254864;
+  text-align: center;
+}
+
+#services #extra ul {
+  list-style: none;
+  padding: 0;
+}
+
+#services #extra .hidden-on-large li {
+  padding-bottom: 10px;
+  font-style: italic;
+  font-size: 125%;
+}
+
+#services #extra .hidden-on-small {
+  display: none;
+}
+
+#services #bottom-text {
+  width: 80%;
+  margin: 0 auto 0;
+  font-size: 115%;
+}
+
+.home #services .section-break {
+  margin: 40px auto;
+}
+
+#summary {
+  text-align: center;
+}
+
+#summary img {
+  margin: 0 auto 0;
+  border-radius: 5px;
+}
+
+#summary #text {
+  width: 85%;
+  margin: 0 auto 0;
+  font-size: 115%;
+}
+
+/* Bigger margin above 
+footer */
+#summary #text> :nth-child(3) {
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .home #services #outer-container {
+    column-gap: 30px;
+  }
+
+  .home #services .inner-container {
+    width: 40%;
+  }
+
+  /* Readjusts margin for new layout */
+  #services #outer-container> :nth-child(4) {
+    margin-bottom: 40px;
+  }
+
+  .home #services .info-container {
+    width: 262px;
+  }
+
+  .home #services .hidden-tablet-scale {
+    display: none;
+  }
+
+  .home #services #extra {
+    max-width: 80%;
+    margin: 30px auto;
+  }
+
+  /* Hidden/ unhide lists for new 
+  layout */
+  .home #services #extra .hidden-on-small {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .home #services #extra .hidden-on-large {
+    display: none;
+  }
+
+  #services #extra .hidden-on-small ul {
+    display: inline-block;
+    margin-top: 0;
+    text-align: left;
+    font-size: 120%;
+    font-style: italic;
+    list-style-type: square;
+  }
+
+  #services #extra .hidden-on-small ul li {
+    padding: 5px 5px;
+  }
+}
+
+@media (min-width: 800px) {
+  .home #services .info-container {
+    width: 90%;
+  }
+
+  .home #summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow: visible;
+  }
+
+  .home #summary img {
+    display: inline-block;
+    margin-left: 60px;
+  }
+
+  .home #summary #text {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home #intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .home #intro heading {
+    width: 39%;
+  }
+
+  .home #intro #headline {
+    position: relative;
+    top: 30px;
+    font-size: 120%;
+    text-align: left;
+  }
+
+  .home #intro .slideshow-container {
+    width: 55%;
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  .home #intro .slideshow-container img {
+    border-radius: 0;
+  }
+
+  .home #intro #sub-text {
+    display: block;
+    margin-top: 15px;
+    font-size: 130%;
+  }
+
+  .home #summary #text {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home #intro #headline {
+    margin-left: 10px;
+    font-size: 130%;
+  }
+
+  .home #intro .slideshow-container {
+    max-width: none;
+  }
+
+  .home #services .inner-container {
+    display: inline-block;
+    position: relative;
+    width: 19%;
+    margin: 0 0 0 25px;
+  }
+
+  /* Readjusts position of last
+  container */
+  .home #services #outer-container>:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  /* Unhides text for larger screen */
+  .home #outer-container>:nth-child(4) .hidden-small-scale {
+    display: inline;
+  }
+
+  .home #summary #text {
+    width: 45%;
+    margin: 20px auto 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .home {
+    font-size: 18px;
+  }
+
+  .home #intro #headline {
+    position: relative;
+    top: 10%;
+  }
+
+  .home #services .inner-container {
+    width: 20%;
+  }
+
+  .home #services #extra {
+    max-width: 1152px;
+    margin: 3% auto;
+    font-size: 110%;
+  }
+
+  .home #summary img {
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .home #intro {
+    display: block;
+  }
+
+  .home #intro #headline {
+    display: inline-block;
+    position: relative;
+    left: 7%;
+    width: 35%;
+    margin: 20x auto 0;
+  }
+
+  .home #intro .slideshow-container {
+    float: right;
+  }
+
+  .home #intro #sub-text {
+    display: inline-block;
+    position: relative;
+    left: 5%;
+    width: 35%;
+  }
+
+  .home #intro .section-break {
+    margin: 40px auto;
+  }
+
+  .home #summary img {
+    margin-left: 17%;
+  }
+}
+
+@media (min-width: 1663px) {
+  .home #intro #headline {
+    max-width: 626px;
+    font-size: 140%;
+  }
+
+  .home #intro #sub-text {
+    left: 6%;
+  }
+
+  .home #intro .section-break {
+    margin: 5% auto;
+  }
+}
+
+@media (min-width: 1700px) {
+  .home #summary img {
+    margin-left: 6%;
+  }
+
+  .home #summary #text {
+    width: 25%;
+  }
+
+  /* Reposition first paragraph */
+  .home #text> :nth-child(1) {
+    position: relative;
+    top: -40px;
+  }
+
+  /* Reposition second paragraph
+    and increase size */
+  .home #text> :nth-child(3) {
+    position: relative;
+    top: 30px;
+    font-size: 105%;
+  }
+
+  .home #summary .section-break {
+    margin: 40px auto;
+  }
+}
+
+@media (min-width: 1800px) {
+  .home #summary #text {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1905px) {
+  .home #intro .section-break {
+    margin-top: 8%;
+    margin-bottom: 3%;
+  }
+}
+
+
+/* ==============
+  3. Partitions 
+  ==============*/
+
+.partitions {
+  font-size: 1.1rem;
+}
+
+.partitions h2 {
+  font-size: 1.25rem;
+}
+
+.partitions img {
+  border-radius: 5px;
+}
+
+#partitons #top-section {
+  max-width: 100%;
+}
+
+.partitions #top-section #text {
+  display: block;
+  position: relative;
+  max-width: 85%;
+  margin: 0 auto 0;
+  text-align: center;
+}
+
+.partitions #top-section #text span {
+  font-weight: bold;
+}
+
+.partitions #top-section #image {
+  display: block;
+  max-width: 600px;
+  height: auto;
+  margin: 30px auto 20px;
+}
+
+.partitions #top-section #image img {
+  width: 100%;
+}
+
+.partitions .section-break.hidden-on-small {
+  display: none;
+}
+
+.partitions #middle-section #text {
+  display: block;
+  position: relative;
+  max-width: 85%;
+  margin: 0 auto 0;
+}
+
+.partitions #middle-section h2 {
+  font-size: 1.25rem;
+}
+
+.partitions #middle-section #text span {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.partitions #middle-section {
+  margin-bottom: 40px;
+}
+
+.partitions #middle-section #images img {
+  display: block;
+  max-width: 100%;
+  margin: 25px auto 0;
+}
+
+.partitions #middle-section #images .hidden-on-small {
+  display: none;
+}
+
+.partitions #bottom-section h2 {
+  width: 100%;
+  margin: 30px auto 15px;
+  text-align: center;
+}
+
+.partitions #bottom-section .container {
+  display: block;
+  width: 80%;
+  margin: 15px auto;
+  padding: 10px 20px;
+  background-color: #e6ebf0;
+  border-radius: 5px;
+}
+
+.partitions #bottom-section .container h3 {
+  font-size: 1.1rem;
+}
+
+.partitions #bottom-section> :nth-child(3) {
+  background-color: #f0eae6;
+}
+
+.partitions #bottom-section #bottom-images {
+  width: 100%;
+  background-color: #e6ebf0;
+  padding-bottom: 5px;
+}
+
+.partitions #bottom-section #bottom-images img {
+  display: block;
+  max-width: 100%;
+  margin: 15px auto;
+}
+
+.partitions #footer img {
+  border-radius: 0;
+}
+
+@media (min-width: 520px) {
+  .partitions #middle-section li {
+    list-style: none;
+  }
+
+  .partitions #bottom-section #bottom-images {
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: 769px) {
+  .partitions #middle-section #images {
+    display: block;
+    width: 100%;
+    margin: 0 auto 0;
+    text-align: center;
+  }
+
+  .partitions #middle-section #images img {
+    display: inline-block;
+    width: 250px;
+    height: 336px;
+    margin: 15px 5%;
+  }
+
+  .partitions #middle-section #images .hidden-on-small {
+    display: inline-block;
+  }
+
+  .partitions #bottom-section #bottom-images .hidden-on-large {
+    display: none;
+  }
+
+  .partitions #bottom-section #bottom-images {
+    background-color: white;
+  }
+}
+
+@media (min-width: 800px) {
+  .partitions #middle-section {
+    margin: 35px auto;
+  }
+
+  .partitions #middle-section #text {
+    text-align: center;
+  }
+
+  .partitions #middle-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .partitions #middle-section li {
+    list-style: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .partitions {
+    font-size: 1.2rem;
+  }
+
+  .partitions #page-heading {
+    font-size: 0.9rem;
+  }
+
+  .partitions #middle-section #text {
+    float: left;
+    width: 45%;
+    margin-top: 2.5%;
+    margin-left: 8%;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .partitions #middle-section .section-break.hidden-on-small {
+    display: block;
+    margin: 30px auto 0px;
+  }
+
+  .partitions #middle-section #images img {
+    width: 324px;
+    height: 496px;
+  }
+
+  .partitions #middle-section #images .hidden-on-small {
+    display: none;
+  }
+
+  .partitions #bottom-section #bottom-images {
+    text-align: center;
+  }
+
+  .partitions #bottom-section #bottom-images img {
+    display: inline-block;
+    width: 45%;
+    max-width: 500px;
+    margin: 15px 1%;
+  }
+}
+
+@media (min-width: 1100px) {
+
+  /* New code for iPad fix */
+  .partitions #top-section {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .partitions #top-section img {
+    order: 0;
+  }
+
+  .partitions #top-section #text {
+    order: 1;
+  }
+
+  /* End of new code */
+
+  .partitions #top-section #text {
+    display: inline-block;
+    width: 40%;
+    margin: 5% auto 3%;
+    font-size: 1.4rem;
+  }
+
+  .partitions #top-section #image {
+    position: relative;
+    left: 5%;
+    width: 40%;
+    max-width: 800px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1376px) {
+  .partitions #top-section #text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1398px) {
+  .partitions #middle-section #text {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  /* New code for iPad */
+  .partitions #top-section {
+    display: inline;
+  }
+
+  /* End of new code */
+
+  .partitions #top-section #text {
+    margin-top: 1%;
+    margin-bottom: 0;
+    margin-left: 10%;
+    font-size: 1.4rem;
+  }
+
+  .partitions #top-section #image {
+    float: left;
+    left: 5%;
+    margin-top: 86px;
+  }
+
+  .partitions #top-section .section-break.hidden-on-small {
+    display: block;
+    width: 30%;
+    margin: 20px 0;
+    margin-left: 55%;
+  }
+
+  .partitions #middle-section {
+    margin-top: 0;
+  }
+
+  .partitions #middle-section #text {
+    display: inline-block;
+    float: none;
+    width: 40%;
+    margin-top: 0;
+    margin-left: 10%;
+    font-size: 1.2rem;
+  }
+
+  .partitions #middle-section #text h2 {
+    font-size: 1.3rem;
+  }
+
+  .partitions #middle-section #images .partitions-hidden-on-large {
+    display: none;
+  }
+
+  .partitions #middle-section .section-break {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1570px) {
+  .partitions #top-section #image {
+    margin-top: 52px;
+  }
+
+  .partitions #middle-section #text {
+    left: 1.5%;
+  }
+}
+
+@media (min-width: 1640px) {
+  .partitions #top-section #image {
+    margin-top: 42px;
+  }
+
+  .partitions #middle-section .section-break.hidden-on-small {
+    margin-top: 5%;
+  }
+}
+
+@media (min-width: 1675px) {
+  .partitions #top-section #text {
+    padding-top: 1%;
+  }
+
+  .partitions #top-section .section-break.hidden-on-small {
+    margin: 2% 0;
+    margin-left: 55%;
+  }
+}
+
+@media (min-width: 1725px) {
+  .partitions #top-section #text {
+    padding-top: 2%;
+  }
+
+  .partitions #middle-section #text {
+    left: 2%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .partitions #top-section #text {
+    font-size: 1.5rem;
+  }
+
+  .partitions #middle-section #text h2 {
+    font-size: 1.4rem;
+  }
+
+  .partitions #middle-section #text {
+    font-size: 1.3rem;
+  }
+}
+
+/* ================
+   4. Computer Floors
+   ================= */
+
+main.floors img {
+  border-radius: 5px;
+}
+
+.floors #top-image {
+  width: 250px;
+  margin: 0 auto 0;
+}
+
+.floors #text {
+  width: 85%;
+  margin: 5% auto;
+  font-size: 1.2em;
+}
+
+.floors #bottom-images {
+  text-align: center;
+}
+
+.floors #bottom-images img {
+  width: 85%;
+  max-width: 510px;
+  margin: 0 auto 30px;
+}
+
+@media (min-width: 1000px) {
+  .floors #top-image {
+    display: inline;
+    margin-left: 80px;
+  }
+
+  .floors #top-image img {
+    margin-bottom: 4%;
+  }
+
+  .floors #text {
+    display: inline-block;
+    width: 50%;
+    margin: 1% 5%;
+    font-size: 1.3em;
+  }
+
+  .floors #bottom-images .floors-hidden {
+    display: inline-block;
+  }
+
+  .floors #bottom-images img {
+    width: 40%;
+    margin: 0 2% 30px;
+  }
+
+  .floors #bottom-images .floors-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .floors #bottom-images .floors-hidden {
+    display: inline-block;
+  }
+
+  .floors #bottom-images img {
+    display: inline-block;
+    width: 25%;
+    margin: 0 2% 30px;
+  }
+}
+
+@media (min-width: 1710px) {
+  .floors #text {
+    position: relative;
+    top: -30px;
+    /* margin-top: -10px; */
+  }
+}
+
+/* ================
+   5. Fire Protection
+  ================= */
+.fire .container {
+  padding: 10px 0 10px;
+  background-color: #e6ebf0;
+}
+
+.fire> :nth-child(2) {
+  background-color: white;
+}
+
+.fire .image {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.fire .image img {
+  width: 210px;
+  height: 195px;
+  border: 1px #00396c solid;
+  border-radius: 5px;
+}
+
+.fire .container .text {
+  width: 85%;
+  margin: 0 auto 0;
+  line-height: 1.5em;
+}
+
+.fire .container .text h2 {
+  font-size: 1.4em;
+}
+
+@media (min-width: 700px) {
+  .fire .container {
+    display: flex;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .fire .image {
+    float: left;
+    width: 20%;
+    height: auto;
+    margin: auto auto auto auto;
+  }
+
+  .fire .container .text {
+    float: left;
+    width: 55%;
+    margin: auto auto;
+  }
+}
+
+@media (min-width: 950px) {
+  .fire .image {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1250px) {
+  .fire .container {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 1.1em;
+  }
+}
+
+/* ===================
+   6. Glass Block Walls
+  =================== */
+.glass #page-heading {
+  margin-bottom: 40px;
+}
+
+.glass #top-text,
+#bottom-text {
+  width: 90%;
+  margin: 0 auto 0;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.glass #top-text p {
+  text-align: center;
+}
+
+.glass #image {
+  text-align: center;
+}
+
+.glass #image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.glass #bottom-text {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.glass #bottom-text .container {
+  margin: 2% 0;
+  padding: 20px 20px;
+  background-color: #e6ebf0;
+  border-radius: 5px;
+}
+
+.glass #bottom-text> :nth-child(2) {
+  background-color: #f0eae6;
+}
+
+.glass #bottom-text i {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.glass #bottom-text ul {
+  margin-top: -10px;
+  padding: 0;
+  list-style: none;
+}
+
+.glass li {
+  font-style: italic;
+  font-size: 0.95em;
+}
+
+@media (min-width: 952px) {
+  .glass #bottom-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .glass #bottom-text .container {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .glass #top-text,
+  #bottom-text {
+    font-size: 1.4em;
+  }
+
+  .glass #bottom-text .container li {
+    font-size: 0.9em;
+  }
+}
+
+/* ============
+   7. Environment
+   ============= */
+.enviro #top {
+  padding: 10px 0;
+  background-color: #e6ebf0;
+  border-radius: 5px;
+}
+
+.enviro #top h2 {
+  width: 90%;
+  margin: 15px auto 0;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* Enlarge first h2 at top of main */
+.enviro #top> :nth-child(1)> :nth-child(1) {
+  font-size: 1.2rem;
+  margin-bottom: -15px;
+}
+
+.enviro #top #text {
+  width: 80%;
+  margin: 0 auto 0;
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.4em;
+}
+
+.enviro #top #text ul {
+  padding-left: 0;
+}
+
+.enviro #top #text li {
+  list-style: none;
+  margin: 25px auto;
+}
+
+.enviro #image {
+  display: block;
+  width: 100%;
+  max-width: 707px;
+  margin: 10px auto;
+}
+
+.enviro #bottom h3 {
+  width: 90%;
+  margin: 20px auto 0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.enviro #bottom #grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 95%;
+  margin: 0 auto 20px;
+}
+
+.enviro #bottom .grid-box {
+  width: 90%;
+  margin: 10px;
+  padding: 10px 15px;
+  border-style: ridge;
+  background-color: #e6ebf0;
+  border-radius: 5px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Colours every other box */
+.enviro #bottom .grid-box:nth-child(even) {
+  background-color: #00396c;
+  color: white;
+}
+
+.enviro #host {
+  width: 75%;
+  margin: 0 auto 30px;
+  padding: 20px;
+  text-align: center;
+  background-color: #e6ebf0;
+  border-radius: 5px;
+}
+
+.enviro #host p {
+  font-size: 1.1em;
+}
+
+.enviro #host a {
+  color: #00396C;
+  font-style: italic;
+}
+
+.enviro #footer {
+  margin-top: 20px;
+}
+
+@media (min-width: 769px) {
+  .enviro #bottom #grid {
+    width: 90%;
+  }
+
+  .enviro #bottom .grid-box {
+    width: 40%;
+  }
+
+  /* New grid layout needs different 
+    box colours */
+  .enviro #bottom .grid-box:nth-child(3) {
+    background-color: #00396c;
+    color: white;
+  }
+
+  .enviro #bottom .grid-box:nth-child(4) {
+    background-color: #e6ebf0;
+    color: black;
+  }
+
+  .enviro #host {
+    margin: 40px auto 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .enviro #top h2 {
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+  }
+
+  .enviro #top #text {
+    font-size: 1.1rem;
+  }
+
+  /* Enlarge first h2 at top of main */
+  .enviro #top> :nth-child(1)> :nth-child(1) {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+  }
+
+  .enviro #top #text li {
+    margin-bottom: 35px;
+  }
+
+  .enviro #bottom h3 {
+    font-size: 1.2rem;
+    margin: 30px auto 10px;
+  }
+
+  .enviro #bottom .grid-box {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .enviro #bottom .grid-box {
+    width: 25%;
+  }
+
+  /* Changing box colours back to
+    original scheme */
+  .enviro #bottom .grid-box:nth-child(odd) {
+    background-color: #e6ebf0;
+    color: black;
+  }
+
+  .enviro #bottom .grid-box:nth-child(even) {
+    background-color: #00396c;
+    color: white;
+  }
+}
+
+@media (min-width: 1880px) {
+  .enviro #image {
+    float: left;
+    margin-left: 5%;
+    margin-right: 2%;
+  }
+
+  .enviro #bottom {
+    margin-top: 5%;
+  }
+
+  .enviro #bottom h3 {
+    font-size: 1.4rem;
+  }
+
+  .enviro #bottom #grid {
+    width: 50%;
+    margin-left: 9%;
+  }
+
+  .enviro #host {
+    margin-top: 100px;
+  }
+}
+
+/* ===========
+  8. Contact
+  ============ */
+
+.contact #outer-cont {
+  width: 80%;
+  margin: 40px auto;
+  padding: 10px 15px;
+  background-color: #e6ebf0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact #outer-cont p {
+  font-size: 1.1rem;
+}
+
+.contact #middle-cont {
+  text-align: center;
+}
+
+.contact .inner-cont {
+  display: inline-flex;
+  justify-content: center;
+  column-gap: 10px;
+  width: 100%;
+  max-width: 416px;
+  margin: 20px 0;
+  background-color: #00396c;
+  border-radius: 5px;
+}
+
+.contact .inner-cont img {
+  max-width: 102px;
+  max-height: 102px;
+  /* flex-grow: 1; */
+  border-radius: 5px;
+}
+
+.contact .inner-cont .details-cont {
+  flex-grow: 2;
+  padding: 0px;
+  background-color: white;
+  border-radius: 5px;
+  border-style: inset;
+  text-align: center;
+}
+
+/* Correct size/position of email icon */
+.contact #middle-cont> :nth-child(2) img {
+  max-width: 93px;
+  height: 102px;
+  margin: auto 0 auto 9px;
+}
+
+/* Correct size/position of home icon */
+.contact #middle-cont> :nth-child(3) img {
+  max-width: 93px;
+  max-height: 102px;
+  margin: auto 0 auto 9px;
+}
+
+@media (min-width: 450px) {
+  .contact .inner-cont #hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact #outer-cont {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1046px) {
+  .contact .inner-cont {
+    margin: 20px 20px;
+  }
+}
+
+@media (min-width: 1722px) {
+  .contact #middle-cont {
+    display: inline-flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+/* =================
+  9. Charity Support
+  ================== */
+.charity {
+  font-size: 16px;
+}
+
+.charity #top {
+  margin-bottom: 40px;
+}
+
+.charity #top p {
+  width: 85%;
+  margin: 0 auto 0;
+  text-align: center;
+}
+
+.charity .content-container {
+  width: 90%;
+  max-width: 2000px;
+  margin: 20px auto;
+  background-color: #e6ebf0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Change colour of middle container */
+.charity #outer-cont> :nth-child(2) {
+  background-color: #f0eae6;
+  ;
+}
+
+.charity .content-container img {
+  width: 100%;
+  max-width: 691.19px;
+  border-radius: 5px;
+}
+
+.charity .inner-cont {
+  text-align: center;
+  padding: 0 20px 10px;
+}
+
+/* 1st container Charity number */
+.charity .inner-cont span {
+  font-style: italic;
+}
+
+.charity .inner-cont a {
+  text-decoration: underline;
+}
+
+@media (min-width: 1440px) {
+  .charity {
+    margin-bottom: 20px;
+    /* Adds gap before footer */
+    font-size: larger;
+  }
+
+  .charity #outer-cont {
+    text-align: center;
+  }
+
+  .charity .content-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .charity .content-container img {
+    float: left;
+  }
+
+  .charity .inner-cont {
+    display: inline-block;
+    width: 40%;
+    padding: 30px;
+  }
+}
+
+/*=============================
+  10. Client References (NEW)
+  (REDESIGNED WITH BOOTSTRAP)
+  ==========================*/
+.references {
+  /* Page body */
+  margin: 0 auto 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.references .intro-text {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.references .container-lg {
+  margin: 2rem auto;
+}
+
+.references .card {
+  width: 90%;
+  max-width: 500px;
+}
+
+.references .card-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+/*====================
+  11. Health & Safety
+  ===================*/
+.health {
+  font-size: 16px;
+}
+
+.health #top {
+  width: 85%;
+  margin: 30px auto 20px;
+  padding: 5px 15px;
+  background-color: #e6ebf0;
+  border-radius: 5px;
+}
+
+/* Margin for 2nd & 3rd heading only*/
+.health #top :nth-child(4),
+.health #top :nth-child(6) {
+  margin-top: 40px;
+}
+
+.health .section-break {
+  margin: 30px auto;
+}
+
+.health #bottom {
+  width: 85%;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.health #bottom .section-break {
+  width: 95%;
+}
+
+.health #bottom img {
+  width: 100%;
+  max-width: 460px;
+}
+
+@media (min-width: 768px) {
+  .health .section-break {
+    margin: 40px auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .health {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .health #top {
+    display: inline-block;
+    width: 40%;
+    margin: 30px 20px 40px;
+  }
+
+  .health .section-break {
+    display: none;
+  }
+
+  .health #bottom {
+    display: inline-block;
+    width: 40%;
+    margin: 30px 20px 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .health {
+    font-size: 18px;
+  }
+}
+
+/*==============
+  12. About Us
+  =============*/
+.about {
+  font-size: 18px;
+  text-align: center;
+}
+
+.about p {
+  padding: 10px 15px;
+}
+
+.about img {
+  width: 100%;
+  max-width: 647px;
+  border-radius: 5px;
+
+}
+
+.about #top {
+  width: 80%;
+  margin: 30px auto;
+  background-color: #e6ebf0;
+  border-radius: 5px;
+}
+
+.about #middle {
+  width: 80%;
+  margin: 30px auto;
+  background-color: #F5F6F8;
+  border-radius: 5px;
+}
+
+.about #middle figcaption {
+  padding: 0 10px;
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: center;
+}
+
+.about #bottom {
+  width: 80%;
+  margin: 30px auto;
+  background-color: #e6ebf0;
+  border-radius: 5px;
+}
+
+@media (min-width: 1440px) {
+  .about div {
+    overflow: hidden;
+  }
+
+  .about img {
+    float: left;
+  }
+
+  .about .text {
+    display: inline-block;
+    width: 40%;
+    margin-top: 4%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .about {
+    font-size: 20px;
+  }
+
+  .about .text {
+    margin-top: 3%;
+  }
+}
+
+/* ============
+  13. Ceilings
+  =============*/
+
+/* =======================
+  Max-widths for page images */
+
+/* Top - 2nd img */
+.ceilings #top :nth-child(3) {
+  max-width: 370px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+/* Bottom - Exposed - 1st img */
+.ceilings #bottom #exposed-content> :nth-child(1) {
+  max-width: 921px;
+}
+
+/* Bottom - Exposed - 2nd img */
+.ceilings #bottom #exposed-content> :nth-child(3) {
+  max-width: 370px;
+}
+
+/* Bottom - Concealed - 1st img */
+.ceilings #bottom> :nth-child(3)> :nth-child(2) {
+  max-width: 314px;
+}
+
+/* Bottom - Concealed - 2nd img */
+.ceilings #bottom> :nth-child(3)> :nth-child(4) {
+  max-width: 222px;
+}
+
+/* Bottom - Open - 1st img */
+.ceilings #bottom> :nth-child(4)> :nth-child(2) {
+  max-width: 400px;
+}
+
+/* Bottom - Suspended - 1st img */
+.ceilings #bottom> :nth-child(5)> :nth-child(2) {
+  max-width: 369px;
+}
+
+/* Bottom - Suspended - 2nd img */
+.ceilings #bottom> :nth-child(5)> :nth-child(4) {
+  max-width: 369px;
+}
+
+/* Bottom - Metal - img */
+.ceilings #bottom> :nth-child(6)> :nth-child(2) {
+  max-width: 502px;
+}
+
+.ceilings {
+  font-size: 16px;
+}
+
+.ceilings #top {
+  width: 100%;
+  text-align: center;
+  background-color: #e6ebf0;
+  border-bottom: #00396C 2px solid;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+}
+
+.ceilings #top img {
+  width: 100%;
+}
+
+.ceilings #top .text {
+  width: 85%;
+  margin: 0 auto 10px;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+/* Enlarge opening paragraph */
+.ceilings #top h2 {
+  font-size: 1.1em;
+  padding: 10px 0;
+}
+
+.ceilings .section-break {
+  display: none;
+}
+
+/* Add gap at the end of 
+Intro Section */
+.ceilings #top .text :nth-child(5) {
+  padding-bottom: 10px;
+}
+
+.ceilings #bottom {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.ceilings #bottom h2 {
+  width: 90%;
+  margin: 40px auto 0;
+}
+
+.ceilings .types {
+  padding: 20px 0;
+}
+
+.ceilings .types h3 {
+  font-style: italic;
+  font-size: 1.25em;
+}
+
+.ceilings .types img {
+  display: block;
+  width: 90%;
+  margin: 30px auto;
+  border-radius: 5px;
+}
+
+.ceilings .types .text {
+  width: 85%;
+  margin: 0 auto 10px;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+/* Specific rule for 1st type class
+for larger screen size  */
+.ceilings #bottom #exposed-content {
+  margin: 0 auto 0;
+}
+
+.ceilings #bottom> :nth-child(3),
+.ceilings #bottom> :nth-child(5) {
+  background-color: #F0EAE6;
+}
+
+/* Decrease gap before footer */
+.ceilings #bottom> :nth-child(6) {
+  padding-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+
+  /* Top - Hide 2nd image for larger 
+    screens */
+  .ceilings #top :nth-child(3) {
+    display: none;
+  }
+
+  /* ==========================
+    Changes top section layout */
+  .ceilings #top .text {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+  }
+
+  .ceilings #top .text h2 {
+    flex-grow: 2;
+    margin-bottom: 0;
+  }
+
+  .ceilings #top .text p {
+    width: 45%;
+    margin-top: 0;
+  }
+
+  /* Changes section break to vertical */
+  .ceilings #top .section-break {
+    display: inline;
+    height: 200px;
+    width: 5px;
+  }
+
+  .ceilings .types img {
+    margin: 40px auto;
+  }
+
+  /* Increase gap before footer
+  -- Targets last type class */
+  .ceilings #bottom> :nth-child(6) {
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .ceilings {
+    font-size: 1.1em;
+  }
+
+  .ceilings p {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 2526px) {
+  .ceilings #top h2 {
+    width: 100%;
+  }
+}
